@@ -23,7 +23,7 @@ public class PlayerContoller : MonoBehaviour
         hInput = Input.GetAxis("Horizontal");
         fInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * Time.deltaTime * speed * fInput );
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * hInput );
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * hInput );
 
     }
 }
