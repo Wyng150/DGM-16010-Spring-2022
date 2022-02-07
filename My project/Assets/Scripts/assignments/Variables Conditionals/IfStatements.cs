@@ -6,7 +6,7 @@ public class IfStatements : MonoBehaviour
 {
     // public string lightColor;
 
-    public string Weather;
+    //public string Weather;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class IfStatements : MonoBehaviour
             Debug.Log("Wrong Color");
         }
         */
-
+        /*
         if(Weather == "Rain" || Weather == "Snow")
         {
             Debug.Log("There weather is bad, you should wear a coat!");
@@ -45,7 +45,8 @@ public class IfStatements : MonoBehaviour
         {
             Debug.Log("At least it's a dry heat.");
         }
+        */
     }
-
+        
 
 }
