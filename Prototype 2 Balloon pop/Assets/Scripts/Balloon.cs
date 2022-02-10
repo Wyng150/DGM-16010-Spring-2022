@@ -5,7 +5,7 @@ using UnityEngine;
 public class Balloon : MonoBehaviour
 {
     public int scoreToGive = 100; //score for popped balloon
-    public int clickToPop = 3; //clicks until balloon pops
+    public int clickToPop = 6; //clicks until balloon pops
     public float inflation = 0.10f;
 
     // Start is called before the first frame update
@@ -22,13 +22,14 @@ public class Balloon : MonoBehaviour
 
     void OnMouseDown()
     {
-        clickToPop -= 1; // 
+        clickToPop -= 1; //reduced clicks by one
 
         transform.localScale += Vector3.one * inflation;
 
         if(clickToPop == 0);
         {
-            destroy gameObject;
+            Destroy(gameObject);
         }
+        
     }
 }

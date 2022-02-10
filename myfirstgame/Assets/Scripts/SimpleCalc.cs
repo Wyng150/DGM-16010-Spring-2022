@@ -11,16 +11,43 @@ public class SimpleCalc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int total;
-
-        total = numberA + numberB;
-
-        Debug.Log(numberA + " + " + numberB + " = " + total);
-            }
+        Add();
+        Sub();
+        Mult();
+        Divi();
+    }
+         
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void Add()
+    {
+        int total;
+        total = numberA + numberB;
+        Debug.Log(numberA +" + "+ numberB +" = "+ total);
+    }
+    void Sub()
+    {
+        int total;
+        total = numberB - numberC;
+        Debug.Log(numberB +" - "+ numberC +" = "+ total);
+    }
+    void Mult()
+    {
+        int total;
+        total = numberB * numberB;
+        Debug.Log(numberB +" X "+ numberB +" = "+ total);
+    
+    }
+    void Divi()
+    {
+        int total;
+        total = numberC / numberA;
+        Debug.Log(numberC +" / "+ numberA +" = "+ total);
+    
     }
 }
