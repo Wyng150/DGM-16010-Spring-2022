@@ -819,6 +819,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3554310413987536148, guid: 5664720f80031344e9ef23a89dbd5dad, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 1567857454}
     - target: {fileID: 3799232801280629746, guid: 5664720f80031344e9ef23a89dbd5dad, type: 3}
       propertyPath: m_Name
       value: Red Balloon
