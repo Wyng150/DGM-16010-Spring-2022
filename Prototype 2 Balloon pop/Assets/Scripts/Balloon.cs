@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Balloon : MonoBehaviour
 {
-    public int scoreToGive = 100; //score for popped balloon
-    public int clickToPop = 3; //clicks until balloon pops
-    public float inflation = 0.10f;
-    public ScoreManager scoreManager; // a variable to reference score manager script
-
+    public int scoreToGive = 100;
+    public int clickToPop = 3;
+    public float scaleToIncrease = 0.10f;
+    public ScoreManager scoreManager;
     // Start is called before the first frame update
     void Start()
     {
-        scoreManager = GameObject.Find("ScoreManager").GetComponent<scoreManager>();
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -20,14 +19,14 @@ public class Balloon : MonoBehaviour
     {
         
     }
-
+  
     void OnMouseDown()
     {
         clickToPop -= 1; //reduced clicks by one
 
-        transform.localScale += Vector3.one * inflation;
+        transform.localScale += Vector3.one * scaleToIncrease;
 
-        if(clickToPop == 0);
+        if(clickToPop ==0)
         {
             scoreManager.IncreaseScoreText(scoreToGive);
             Destroy(gameObject);

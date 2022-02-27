@@ -552,22 +552,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreToGive: 100
   clickToPop: 3
-  inflation: 0.1
-  scoreManager: {fileID: 1567857454}
---- !u!135 &1063099739
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063099736}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1063099741
+  scaleToIncrease: 0.1
+  scoreManager: {fileID: 0}
+--- !u!114 &1063099738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -580,12 +567,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  lowerBound: 10
+  scoreManager: {fileID: 0}
+--- !u!114 &1063099741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063099736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dda9d4c436f6164193cccce6ab3b256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &1138609774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 963709683287477793, guid: 4848db25910ec9342b658ea62c2ba16b, type: 3}
   m_PrefabInstance: {fileID: 8639099098525380546}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1138609775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138609774}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db08b3342ff2c348982073aa18d0809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 100
+  clickToPop: 3
+  scaleToIncrease: 0.1
+  scoreManager: {fileID: 0}
+--- !u!114 &1138609776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -599,8 +618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreToGive: 100
   clickToPop: 3
-  inflation: 0.1
-  scoreManager: {fileID: 1567857454}
+  scaleToIncrease: 0.1
+  scoreManager: {fileID: 0}
 --- !u!114 &1138609777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +633,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  lowerBound: 10
+  scoreManager: {fileID: 0}
+--- !u!114 &1138609779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138609774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dda9d4c436f6164193cccce6ab3b256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &1207010900
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +688,7 @@ MonoBehaviour:
   - Janelle
   - Jordan
   numbers: 010000000f000000450000002a0000006400000065878d06ea000000
+  balloonPrefabs: 000000000100000002000000
 --- !u!4 &1207010902
 Transform:
   m_ObjectHideFlags: 0
@@ -724,6 +760,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644070076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db08b3342ff2c348982073aa18d0809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 100
+  clickToPop: 3
+  scaleToIncrease: 0.1
+  scoreManager: {fileID: 0}
+--- !u!114 &1644070078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644070076}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0db08b3342ff2c348982073aa18d0809, type: 3}
@@ -731,8 +783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreToGive: 100
   clickToPop: 3
-  inflation: 0.1
-  scoreManager: {fileID: 1567857454}
+  scaleToIncrease: 0.1
+  scoreManager: {fileID: 0}
 --- !u!114 &1644070079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,6 +798,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  lowerBound: 10
+  scoreManager: {fileID: 0}
+--- !u!114 &1644070081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644070076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dda9d4c436f6164193cccce6ab3b256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &1731775399
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +843,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ff11454a6591c4085d120312ed9c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPrefabs:
+  - {fileID: 1063099736}
+  - {fileID: 1644070076}
+  - {fileID: 1138609774}
+  startDelay: 0.5
+  spawnInterval: 1.5
 --- !u!4 &1731775401
 Transform:
   m_ObjectHideFlags: 0
@@ -865,7 +939,7 @@ PrefabInstance:
     - target: {fileID: 3554310413987536148, guid: 5664720f80031344e9ef23a89dbd5dad, type: 3}
       propertyPath: scoreManager
       value: 
-      objectReference: {fileID: 1567857454}
+      objectReference: {fileID: 0}
     - target: {fileID: 3799232801280629746, guid: 5664720f80031344e9ef23a89dbd5dad, type: 3}
       propertyPath: m_Name
       value: Red Balloon

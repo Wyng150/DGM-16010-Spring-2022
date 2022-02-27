@@ -11,18 +11,19 @@ public class MoveDown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreManager = GameObject.Find("ScoreManager").GetComponent<scoreManager>();
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
         balloon = GetComponent<Balloon>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down * Time.deltaTime,0);
-        if(Transform.postition.y < lowerBound)
+        transform.Translate(Vector3.down * Time.deltaTime);
+        if(transform.position.y < lowerBound)
         {
             scoreManager.DecreaseScoreText(balloon.scoreToGive);
-            Destroy(GameObject);
+            Destroy(gameObject);
+
         }
     }
 }

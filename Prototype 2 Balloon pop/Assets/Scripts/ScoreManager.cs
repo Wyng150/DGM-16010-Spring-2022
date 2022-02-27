@@ -3,31 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour 
 {
-    public int score; //keep track of score
-    public TextMeshProUGUI scoreText; // txt object to be modified
+    public int score;
+    public TextMeshProUGUI scoreText;
 
-    // Start is called before the first frame update
     void Start()
     {
         UpdateScoreText();
     }
-
-    // Update is called once per frame
     
     public void IncreaseScoreText(int amount)
     {
         score += amount;
         UpdateScoreText();
     }
-    public void DecreaseScoreText()
+    public void DecreaseScoreText(int amount)
     {
         score -= amount;
-        UpdateScoreText;
+        UpdateScoreText();
+
     }
     public void UpdateScoreText()
     {
-        scoreText.text = "score: "+ score;
+        scoreText.text = "Score; " + score;
     }
+
+    
 }
+
+
