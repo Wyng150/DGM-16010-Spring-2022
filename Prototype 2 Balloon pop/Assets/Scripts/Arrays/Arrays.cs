@@ -20,9 +20,9 @@ public class Arrays : MonoBehaviour
     void Start()
     {
 
-        Debug.Log(friendNames[0]);
+        /*Debug.Log(friendNames[0]);
         friendNames;  
-        
+
         Debug.Log(vanhalenSongs[0]);
         vanhalenSongs;  
 
@@ -39,7 +39,7 @@ public class Arrays : MonoBehaviour
         foreach(int numbers in numbers)
        {
             print(numbers);
-        }
+        }*/
     }
 
     // Update is called once per frame
