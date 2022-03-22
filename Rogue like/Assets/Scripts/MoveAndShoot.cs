@@ -39,7 +39,7 @@ public class MoveAndShoot : MonoBehaviour
         }
         else
         {
-            shotDelay-= Time.deltaTime;
+            shotDelay -= Time.deltaTime;
         }
     }
 }
