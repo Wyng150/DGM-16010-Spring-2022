@@ -16,6 +16,10 @@ public class MoveAndShoot : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         shotDelay = startDelay;
+        speed = 1;
+        stopDistance = 3;
+        retreatDistance = 2;
+        startDelay = 1;
     }
 
     // Update is called once per frame
