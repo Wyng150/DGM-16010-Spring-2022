@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveAndShoot : MonoBehaviour
 {
     public float speed;
+
     public float stopDistance;
     public float retreatDistance;
     private Transform target;
@@ -16,10 +17,7 @@ public class MoveAndShoot : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         shotDelay = startDelay;
-        speed = 1;
-        stopDistance = 3;
-        retreatDistance = 2;
-        startDelay = 1;
+        
     }
 
     // Update is called once per frame
@@ -37,6 +35,7 @@ public class MoveAndShoot : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
         }
+
         if(shotDelay <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
