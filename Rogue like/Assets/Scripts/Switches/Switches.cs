@@ -5,6 +5,7 @@ using UnityEngine;
 public class Switches : MonoBehaviour
 {
     public string npcConv;
+    public int socialClass = 1;
 
     void Start()
     {
@@ -21,8 +22,9 @@ public class Switches : MonoBehaviour
              break;
 
         }
+        
 
-        switch(socialClass)
+        /*switch(socialClass)
         {
             case 5:
             Debug.Log("Hello, Mr. Bill Murray!");
@@ -36,6 +38,7 @@ public class Switches : MonoBehaviour
             case 1:
             Debug.Log("Shut up, Meg.");
         }
+        */
     }
 
 }

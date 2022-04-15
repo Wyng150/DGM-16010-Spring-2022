@@ -16,13 +16,13 @@ public class Enemy : MonoBehaviour
     public PlayerController player;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if(Time.time - lastAttackTime >= attackRate && Vector2.Distance(transform.position, player.transform.position) < attackRange)
         {
@@ -37,12 +37,12 @@ public class Enemy : MonoBehaviour
             Die();
 
     }
-    void Attack()
+    public void Attack()
     {
         lastAttackTime = Time.time;
         player.TakeDamage(damage);
     }
-    void Die()
+    public void Die()
     {
         Destroy(gameObject);
     }
