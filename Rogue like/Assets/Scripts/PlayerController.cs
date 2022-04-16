@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
     public int curHP;
     public int maxHP;
     public HealthBar healthBar;
+
+    [Header("Pickups")]
+    public int key;
+    public int coins;
+    public int gems;
   
 
     [Header("Player Movement")]
