@@ -10,17 +10,27 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Rigidbody2D rb;
     private float moveVelocity;
+    [Header("PlayerHealth")]
+    public int curHP;
+    public int maxHP;
 
     [Header("GroundCheck")]
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
+    public int redKey;
+    public int blueKey;
+    
+    public int greenKey;
+    public int silverKey;
+    public int goldKey;
 
     // Start is called before the first frame update
     void Start()
     {
         isGrounded = true;
         rb = GetComponent<Rigidbody2D>();
+        curHP = maxHP;
 
     }
     void FixedUpdate()
@@ -48,5 +58,19 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x,jumpHeight);
         
+    }
+     public void TakeDamage(int damage)
+    {
+        curHP -= damage;
+       
+
+        if(curHP <= 0)
+            Die();
+
+    }
+    void Die()
+    {
+        Destroy(gameObject);
+        Debug.Log("You have died.");
     }
 }
