@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6419948784625421856}
   - component: {fileID: 7499735589284437714}
   m_Layer: 3
-  m_Name: Forest enemy
+  m_Name: Angel Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.3490566, g: 0.2917719, b: 0.027990391, a: 1}
+  m_Color: {r: 1, g: 0.9167996, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d70882d0004c449ab4cead01187276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  distance: 0.2
+  speed: 3.5
+  distance: 1
   attackRange: 0
   attackRate: 0
   groundDetection: {fileID: 6419948785146089066}
